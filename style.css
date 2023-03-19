@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Edu+NSW+ACT+Foundation:wght@700&family=Poppins:ital,wght@0,300;0,600;0,700;0,800;0,900;1,600;1,700;1,800&family=Roboto:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: #DDD0C9;
+}
+
+section{
+    color: black;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    font-family: "Edu NSW ACT Foundation", sans-serif;
+    color: black;
+    background: #594D47;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: black;
+    position: relative;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+header .navigation a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+header .navigation a:hover{
+    background: #DDD0C9;
+    color: beige;
+}
+.content{
+    max-width: 650px;
+    margin: 60px 50px;
+}
+
+
+.content .info-btn{
+    color: aliceblue;
+    background: #3FA0BD ;
+    text-decoration: none;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    padding: 7px 17px;
+    font-weight: 700;
+    transition: 0.3s;
+    transition-property: background;
+}
+.content .info-btn:hover{
+    background: #2C7387;
+}
+.media-icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+.media-icons a{
+    position: relative;
+    color: beige;
+    font-size: 25px;
+    transition-property: transform;
+}
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+.media-icons a:hover{
+    transform: scale(1.5);
+}
+footer{
+    position: relative;
+    background: url(images/footer_img.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    height: 500px;
+    width: 100%;
+}
+footer .contact{
+    color: #181616;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+footer .contact p a{
+    text-decoration: none;
+    color: beige;
+    font-size: 20px;
+}
+footer .contact p{
+    margin-bottom: 100px;
+}
+
+label{
+    display: none;
+}
+
+#check{
+    z-index: 3;
+    display: none;
+}
+@media(max-width: 960px)
+{
+    header .navigation{
+        display: none;
+    }
+    label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    label:hover{
+        color:#DDD0C9;
+    }
+    label .close-btn{
+        display: none;
+    }
+
+    #check:checked ~ header .navigation{
+        z-index: 2;
+        position: fixed;
+        background:#C1B6B0;
+        opacity:0.95;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ header .navigation a{
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+
+    #check:checked ~ header label .menu-btn{
+        display: none;
+    }
+    #check:checked ~ header label .close-btn{
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .menu-btn{
+        position: absolute;
+    }
+
+    header .logo{
+        position:absolute;
+        bottom: 0;
+    }
+
+    .content .info h2{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .content .info h2 span{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .content .info p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:560px){
+    .content .info h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .content .info h2 span{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .content .info p{
+        font-size: 14px;
+    }
+}
