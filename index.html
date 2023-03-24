@@ -7,301 +7,63 @@
     <title>Магазин: Coconut</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico">
+    <script src="script.js" defer></script>
+</head>
 <body>
-    <!-- Header content -->
-    <section id="header">
-        <!-- lOGO -->
-        <a href="#"><img src="/images/favicons/android-chrome-192x192.png" style="width:100px; border-radius: 40%;" class="logo"></a>
+    <section>
+        <input type="checkbox" id="check">
+        <header>
+            <a href="#" class ="logo"><img src="/images/logoimg.jpg" width="100px; heigh"></a>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">Магазин Косметика</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Инфо</a></li>
+                    <li><a>Каталог</a>
+                        <ul class="sub">
+                            <a href="#">Кремы</a>
+                            <a href="#">Тоник / Лосьоны</a>
+                            <a href="#">Очищающий</a>
+                            <a href="#">Peeling / Scrubs</a>
+                            <a href="#">Masks</a>
+                        </ul>
+                    </li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+            <label for="check" id="lbls">
+                <i class="fas fa-bars menu-btn"></i>
+                <i class="fas fa-times close-btn"></i>
+            </label>
+        </header>
+        <section class="content">
+            <input type="search" id="searchbar" onkeyup="search_product()" type="text" name="search" placeholder="Поиск товара..">
 
-        <!-- NAVIGATION MENU -->
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <!-- <div class="dropdown-content">
-                    <a href="#">Creams</a>
-                    <a href="#">Tonics/Lotions</a>
-                    <a href="#">Cleansing</a>
-                    <a href="#">Peelings/Scrubs</a>
-                    <a href="#">Masks</a>
-                </div> -->
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </div>
+            <section class="products"></section>
+        </section>
+        <footer class="footer footer-transparent">
+            <div class="contact">
+                <p style="color:beige">Связаться с нами</p>
 
+                <p><a href="tel:+70000000000">+7(000) 000 00-00</a></p>
+
+                <p><a href="something@mail.com">something@mail.com</a></p>
+            
+            </div>
+
+
+            <div class="media-icons">
+                <a href="https://instagram.com/coconut_cosmetics.skin?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-vk"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+
+
+            <div style="font-size:10px; position: absolute;
+            bottom: 8px;left: 16px;">Photo by <a href="https://unsplash.com/@pmvch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">pmv chamara</a> on <a href="https://unsplash.com/photos/dMjkQJs58uo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </footer>
     </section>
-
-
-    <!-- Hero content -->
-    <section id="hero">
-        <h4>Lorem ipsum</h4>
-        <h2>Matus Elorem</h2>
-        <h1> Ipsum oniow</h1>
-        <p>Coming soon Sit back!</p>
-        <button>Shop Now</button>
-    </section>
-    <hr>
-    <!-- Catalog content -->
-    <div id="cat-head">
-        <h2> Catalog</h2>
-    </div>
-    <section id="catalog" class="section-p1">
-        <div class="ca-box">
-            <h6>Creams</h6>
-        </div>
-        <div class="ca-box">
-            <h6>Tonic / Lotions</h6>
-        </div>
-        <div class="ca-box">
-            <h6>Cleansing</h6>
-        </div>
-        <div class="ca-box">
-            <h6>Peelings / Scrubs</h6>
-        </div>
-        <div class="ca-box">
-            <h6>Masks</h6>
-        </div>
-    </section>
-    
-    <!-- Products -->
-    <section id="product1" class="section-p1">
-        <h2>Products</h2>
-        <div class="products-container">
-            <div class="product">
-                <!-- Image file goes here -->
-                <div class="description">
-                    <p>Image</p>
-                    <span>Brand</span>
-                    <h5>Product Name</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>&#x20bd price</h4>
-                </div>
-                <a href="#" style="
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                border-radius: 50px;
-                background-color: #F3E5BE;
-                font-weight: 500;
-                color:#D39A37;
-                border: 1px solid ;
-                position: absolute;
-                bottom: 20px;
-                right: 10px;"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-            <div class="product">
-                <!-- Image file goes here -->
-                <div class="description">
-                    <p>Image</p>
-                    <span>Brand</span>
-                    <h5>Product Name</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>&#x20bd price</h4>
-                </div>
-                <a href="#" style="
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                border-radius: 50px;
-                background-color: #F3E5BE;
-                font-weight: 500;
-                color:#D39A37;
-                border: 1px solid ;
-                position: absolute;
-                bottom: 20px;
-                right: 10px;"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-            <div class="product">
-                <!-- Image file goes here -->
-                <div class="description">
-                    <p>Image</p>
-                    <span>Brand</span>
-                    <h5>Product Name</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>&#x20bd price</h4>
-                </div>
-                <a href="#" style="
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                border-radius: 50px;
-                background-color: #F3E5BE;
-                font-weight: 500;
-                color:#D39A37;
-                border: 1px solid ;
-                position: absolute;
-                bottom: 20px;
-                right: 10px;"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-            <div class="product">
-                <!-- Image file goes here -->
-                <div class="description">
-                    <p>Image</p>
-                    <span>Brand</span>
-                    <h5>Product Name</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>&#x20bd price</h4>
-                </div>
-                <a href="#" style="
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                border-radius: 50px;
-                background-color: #F3E5BE;
-                font-weight: 500;
-                color:#D39A37;
-                border: 1px solid ;
-                position: absolute;
-                bottom: 20px;
-                right: 10px;"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-            <div class="product">
-                <!-- Image file goes here -->
-                <div class="description">
-                    <p>Image</p>
-                    <span>Brand</span>
-                    <h5>Product Name</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>&#x20bd price</h4>
-                </div>
-                <a href="#" style="
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                border-radius: 50px;
-                background-color: #F3E5BE;
-                font-weight: 500;
-                color:#D39A37;
-                border: 1px solid ;
-                position: absolute;
-                bottom: 20px;
-                right: 10px;"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-            <div class="product">
-                <!-- Image file goes here -->
-                <div class="description">
-                    <p>Image</p>
-                    <span>Brand</span>
-                    <h5>Product Name</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>&#x20bd price</h4>
-                </div>
-                <a href="#" style="
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                border-radius: 50px;
-                background-color: #F3E5BE;
-                font-weight: 500;
-                color:#D39A37;
-                border: 1px solid ;
-                position: absolute;
-                bottom: 20px;
-                right: 10px;"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-            <div class="product">
-                <!-- Image file goes here -->
-                <div class="description">
-                    <p>Image</p>
-                    <span>Brand</span>
-                    <h5>Product Name</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>&#x20bd price</h4>
-                </div>
-                <a href="#" style="
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                border-radius: 50px;
-                background-color: #F3E5BE;
-                font-weight: 500;
-                color:#D39A37;
-                border: 1px solid ;
-                position: absolute;
-                bottom: 20px;
-                right: 10px;"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-            <div class="product">
-                <!-- Image file goes here -->
-                <div class="description">
-                    <p>Image</p>
-                    <span>Brand</span>
-                    <h5>Product Name</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>&#x20bd price</h4>
-                </div>
-                <a href="#" style="
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                border-radius: 50px;
-                background-color: #F3E5BE;
-                font-weight: 500;
-                color:#D39A37;
-                border: 1px solid ;
-                position: absolute;
-                bottom: 20px;
-                right: 10px;"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-        </div>
-    </section>
-
-    
-    <script src="script.js">
-    </script>
 </body>
 </html>
