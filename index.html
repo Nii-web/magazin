@@ -5,65 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин: Coconut</title>
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <section>
-        <input type="checkbox" id="check">
-        <header>
-            <a href="#" class ="logo"><img src="/images/logoimg.jpg" width="100px; heigh"></a>
-            <div class="navigation">
-                <ul>
+<body style="font-family:'Lato',sans-serif;">
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="/index.html"><img src="/images/logoimg.jpg" width="100px" style="border-radius: 50%;"></a></div>
+                <ul class="links">
                     <li><a href="#">Магазин Косметика</a></li>
                     <li><a href="#">О нас</a></li>
                     <li><a href="#">Инфо</a></li>
-                    <li><a>Каталог</a>
-                        <ul class="sub">
-                            <a href="#">Кремы</a>
-                            <a href="#">Тоник / Лосьоны</a>
-                            <a href="#">Очищающий</a>
-                            <a href="#">Peeling / Scrubs</a>
-                            <a href="#">Masks</a>
+                    <li>
+                        <a href="#" class="desktop-link">Каталог</a>
+                        <input type="checkbox" id="show-catalog">
+                        <label for="show-catalog">Каталог</label>
+                        <ul>
+                            <li><a href="#">Кремы</a></li>
+                            <li><a href="#">Тоник / Лосьоны</a></li>
+                            <li><a href="#">Очищающий</a></li>
+                            <li><a href="#">Peeling / Scrubs</a></li>
+                            <li><a href="#">Masks</a></li>
                         </ul>
                     </li>
-                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </div>
-            <label for="check" id="lbls">
-                <i class="fas fa-bars menu-btn"></i>
-                <i class="fas fa-times close-btn"></i>
-            </label>
-        </header>
-        <section class="content">
-            <input type="search" id="searchbar" onkeyup="search_product()" type="text" name="search" placeholder="Поиск товара..">
-
-            <section class="products"></section>
-        </section>
-        <footer class="footer footer-transparent">
-            <div class="contact">
-                <p style="color:beige">Связаться с нами</p>
-
-                <p><a href="tel:+70000000000">+7(000) 000 00-00</a></p>
-
-                <p><a href="something@mail.com">something@mail.com</a></p>
-            
-            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Поиск Товара..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+        </nav>
+    </div>
 
 
-            <div class="media-icons">
-                <a href="https://instagram.com/coconut_cosmetics.skin?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-vk"></i></a>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-            </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-transparent">
+        <div class="contact">
+            <p style="color:beige">Связаться с нами</p>
+
+            <p><a href="tel:+70000000000">+7(000) 000 00-00</a></p>
+
+            <p><a href="something@mail.com">something@mail.com</a></p>
+        
+        </div>
 
 
-            <div style="font-size:10px; position: absolute;
-            bottom: 8px;left: 16px;">Photo by <a href="https://unsplash.com/@pmvch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">pmv chamara</a> on <a href="https://unsplash.com/photos/dMjkQJs58uo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </div>
-        </footer>
-    </section>
+        <div class="media-icons">
+            <a href="https://instagram.com/coconut_cosmetics.skin?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-vk"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+
+
+        <div style="font-size:10px; position: absolute;
+        bottom: 8px;left: 16px; font-style: none;">Photo by <a href="https://unsplash.com/@pmvch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">pmv chamara</a> on <a href="https://unsplash.com/photos/dMjkQJs58uo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
+    </footer>
 </body>
 </html>
