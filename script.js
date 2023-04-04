@@ -1,16 +1,21 @@
-function search_product(){
-    let input = document.getElementById('searchbar').value
-    input = input.tolocaleLowerCase();
-    let x=document.getElementsByClassName('products');
+const search = () =>{
+    const searchbox = document.getElementById("search-item").value.toLocaleUpperCase();
+    const storeitems = document.getElementById("product-list");
+    const product = document.querySelectorAll(".product");
+    const pname = storeitems.getElementsByTagName("h2")
 
-    for(i=0;i<x.length;i++)
+    for(var i=0;i<pname.length;i++)
     {
-        if(!x[i].innerHTML.toLocaleLowerCase().includes(input))
-        {
-            x[i].style.display="none";
-        }
-        else{
-            x[i].style.display="none";
+        let match = product[i].getElementsByTagName('h2')[0];
+
+        if(match){
+            let textvalue=match.textContent||match.innerHTML;
+            if(textvalue.toLocaleUpperCase().indexOf(searchbox) > -1){
+                product[i].style.display="";
+            }
+            else{
+                product[i].style.display="none";
+            }
         }
     }
 }
