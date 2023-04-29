@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин: Coconut</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/shop_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico" />
+    <script src="script.js" defer></script>
+  </head>
+  <body style="font-family: 'Lato', sans-serif">
+    <section class="header-section">
+      <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search" />
+          <input type="checkbox" id="show-menu" />
+          <label for="show-menu" class="menu-icon"
+            ><i class="fas fa-bars"></i
+          ></label>
+          <div class="content">
+            <div class="logo">
+              <a href="/index.html"
+                ><img
+                  src="/images/logoimg.jpg"
+                  width="100px"
+                  style="border-radius: 50%"
+              /></a>
+            </div>
+            <ul class="links">
+              <li><a href="/html/shop.html">Магазин Косметика</a></li>
+              <li><a href="/html/about.html">О нас</a></li>
+              <li><a href="/html/information.html">Инфо</a></li>
+              <li>
+                <a href="#" class="desktop-link">Каталог</a>
+                <input type="checkbox" id="show-catalog" />
+                <label for="show-catalog">Каталог</label>
+                <ul>
+                  <li><a href="#">Кремы</a></li>
+                  <li><a href="#">Тоник / Лосьоны</a></li>
+                  <li><a href="#">Очищающий</a></li>
+                  <li><a href="#">Peeling / Scrubs</a></li>
+                  <li><a href="#">Masks</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/html/cart.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <label for="show-search" class="search-icon"
+            ><i class="fas fa-search"></i
+          ></label>
+          <form action="#" class="search-box">
+            <input
+              id="search-item"
+              type="text"
+              placeholder="Поиск Товара..."
+              onkeyup="search()"
+              required
+            />
+            <button type="submit" class="go-icon">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </form>
+        </nav>
+      </div>
+    </section>
+
+    <section id="prodetails" class="sectionp1">
+        <div class="single-pro-image">
+            <!-- img goes here -->
+            <div style="width: 90%;" id="MainImg"></div>
+            <!-- End of image -->
+        </div>
+        <div class="single-pro-details">
+            <h6>product category</h6>
+            <h4>product name</h4>
+            <h2>100p</h2>
+            <input type="number" value="1">
+            <button class="normal"> Add to cart</button>
+            <h4>Product Details</h4>
+            <span>
+                Quisque felis libero, ultricies ut nibh quis, congue eleifend nisi. In luctus consequat massa, eu lacinia enim lacinia quis. Sed sed neque iaculis, tincidunt dolor pharetra, rutrum nisi. Sed at tempor elit, ac tincidunt elit. Donec venenatis et nunc blandit fermentum. Nam non erat nisl. Pellentesque interdum tempor mattis. Proin vehicula lectus vel metus auctor, eget consectetur sem rutrum. Morbi nec hendrerit justo. Proin nec tristique odio, a tincidunt ipsum. Ut est enim, hendrerit et consequat non, pellentesque ut metus. Vestibulum vitae velit vitae mi hendrerit lacinia et id mi. Fusce egestas est a nunc fringilla dapibus.
+            </span>
+        </div>
+    </section>
+  </body>
+</html>

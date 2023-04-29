@@ -152,6 +152,9 @@ nav .content .links{
     background-color: grey;
 }
 /* Body section styling*/
+#product:hover{
+    cursor: pointer;
+}
 .body-section{
     width: 100%;
     padding: 40px 15px 15px 0px;
@@ -159,7 +162,6 @@ nav .content .links{
 .body-section .product-list{
     width: calc(100% - 100px);
     margin: auto;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.8);
     height: fit-content;
     border-radius: 5px;
     display: flex;
@@ -184,6 +186,7 @@ nav .content .links{
     height: 400px;
     position: relative;
     margin: 10px;
+    border-radius: 10px;
 }
 .body-section .product-list .product h2{
     font-size: 18px;
@@ -400,6 +403,27 @@ footer .contact p{
     /* Responsive dropdown code Ends*/
 }
 @media screen and (max-width:400px){
+    .body-section .product-list {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding: 5px;
+        justify-content: space-evenly;
+    }
+    .body-section .product-list .product{
+        width: 100%;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .body-section .product-list .product .p-description .more-dets,.body-section .product-list .product .p-description .add-to-cart {
+        width: 150px;
+        margin-top: 5px;
+        line-height: 30px;
+    }
+    .body-section {
+        width: 100%;
+        padding: 10px 5px;
+    }
     .wrapper nav{
         padding: 0 10px;
     }
@@ -415,5 +439,10 @@ footer .contact p{
     }
     .wrapper .search-box input{
         padding-right: 30px;
+    }
+
+    /* Single product */
+    #prodetails{
+        display: flex;
     }
 }

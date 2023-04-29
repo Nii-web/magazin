@@ -1,0 +1,113 @@
+.sectionp1{
+    height: 80vh;
+    margin-top: 90px;
+}
+
+.product:hover{
+    cursor: pointer;
+}
+#page-header{
+    background-image: url("/images/page-header2.jpg");
+    height: 20vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page-header h2{
+    color: #d7c2c2;
+    font-size: 40px;
+}
+.sectionp1{
+    margin: 10px;
+    padding: 10px;
+}
+#pagination{
+    text-align: center;
+    margin: 30px;    
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color:#d7c2c2;
+    color: black;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 4px;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Single product */
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 15px 0 20px 0;
+    
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top:30px ;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    padding: 40px 0 20px 0;
+    font-size: 20px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+
+}
+#prodetails .single-pro-details button{
+    border-radius: 4px;
+    border: none;
+    width: 120px;
+    height: 47px;
+    background: #DEC29A;
+    color: #fff;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+#MainImg{
+    height: 90%; border: 1px solid black;
+}
+
+
+
+/* 820 x 1180 */
+@media screen and (max-width:400px){
+        /* Single product */
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+    #prodetails .single-pro-image MainImg{
+        height: 60px;
+    }
+
+}

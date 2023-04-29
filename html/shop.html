@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Магазин: Coconut</title>
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/shop_style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -73,10 +74,13 @@
       </div>
     </section>
 
+    <section id="page-header">
+      <h2>Featured Products</h2>
+    </section>
 
     <section class="body-section">
       <div class="product-list" id="product-list">
-        <div class="product">
+        <div class="product" onclick="window.location.href='sproduct.html'">
           <div class="image"></div>
           <div class="p-description">
             <h2>Product name</h2>
@@ -209,6 +213,11 @@
       </div>
     </section>
 
+    <section id="pagination" class="sectionp1">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    </section>
     <!-- Footer -->
     <footer class="footer-section">
       <div class="contact">
@@ -221,9 +230,9 @@
         <a
           href="https://instagram.com/coconut_cosmetics.skin?igshid=YmMyMTA2M2Y="
           ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="#"><i class="fa-brands fa-vk"></i></a>
-          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        ></a>
+        <a href="#"><i class="fa-brands fa-vk"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
       </div>
       <div class="copy">
         Photo by
@@ -238,7 +247,5 @@
         >
       </div>
     </footer>
-      
-
   </body>
 </html>
